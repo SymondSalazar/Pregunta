@@ -20,3 +20,7 @@ yesButton.addEventListener('click', () => {
   happyImage2.style.display = 'block';
   happyImage.style.display = 'block';
 });
+
+noButton.addEventListener('click', () => {
+  noButton.textContent = '¿Segura?';
+});
