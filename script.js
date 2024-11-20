@@ -2,6 +2,7 @@ const noButton = document.getElementById('noButton');
 const yesButton = document.getElementById('yesButton');
 const happyImage = document.getElementById('happyImage');
 const happyImage2 = document.getElementById('imagenx');
+var a = 0;
 // Función para mover el botón "No" a una posición aleatoria en toda la pantalla
 noButton.addEventListener('mouseover', () => {
     const maxX = 400 - noButton.offsetWidth;
@@ -22,5 +23,20 @@ yesButton.addEventListener('click', () => {
 });
 
 noButton.addEventListener('click', () => {
-  noButton.textContent = '¿Segura?';
+  if (a == 0){
+    noButton.textContent = '¿Segura?';
+    a++
+  }
+  else if (a == 1){
+    noButton.textContent= '¿Enserio? :c';
+    a++;
+  }
+  else if(a == 2){
+    noButton.textContent = 'No te creo';
+    a++;
+  }
+  else{
+    noButton.textContent = 'No me rendire';
+    a = 0;
+  }
 });
