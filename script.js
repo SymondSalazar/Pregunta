@@ -23,7 +23,11 @@ yesButton.addEventListener('click', () => {
 });
 
 noButton.addEventListener('click', () => {
-  if (a == 0){
+    if (a == -1){
+        noButton.texContent = 'No';
+        a++;
+    }
+   else if (a == 0){
     noButton.textContent = '¿Segura?';
     a++
   }
