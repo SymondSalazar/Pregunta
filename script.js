@@ -32,11 +32,11 @@ noButton.addEventListener('click', () => {
     a++;
   }
   else if(a == 2){
-    noButton.textContent = 'No te creo';
+    noButton.textContent = 'la tercera es la vencida';
     a++;
   }
   else{
-    noButton.textContent = 'No me rendire';
+    noButton.textContent = 'Di que si :c';
     a = 0;
   }
 });
